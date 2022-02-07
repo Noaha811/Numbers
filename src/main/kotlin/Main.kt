@@ -39,7 +39,7 @@ fun main() {
     }
 
     //calculates and prints out each total cost, with tax, without tax, and with tax+tip
-    val tipTotalStr = twoDigits.format(total*.175)
+    val tipTotalStr = twoDigits.format(total*tipRate)
     println("Total: $totalStr")
     total += total * taxRate
     totalStr = twoDigits.format(total)
